@@ -15,6 +15,3 @@ Description: "Perfil de Solicitud del Procedimiento"
 * extension[UrgenciaProcedimiento].valueCodeableConcept 0..1
 * extension contains Observacion named Observacion 0..1
 * extension[Observacion].valueString 0..1
-
-* extension contains Referencia named Referencia 1..1 
-//* extension[Referencia].valueReference 0..1

@@ -11,4 +11,4 @@ Description: "Perfil de Reporte del Procedimiento"
 * extension contains FechaProcedimiento named FechaProcedimiento 1..1 
 * extension contains TipoProcedimiento named TiposProcedimientos 1..1 
 * extension contains Observacion named Observacion 0..1
-* extension contains Referencia named Referencia 1..1 
+
