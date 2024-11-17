@@ -120,7 +120,7 @@ Description: "An example Solicitud del Procedimiento instance."
 * code.coding.system = "http://snomed.info/sct"
 * code.coding.code = #5738003 "Open biopsy of bronchus"
 
-* extension[UrgenciaProcedimiento].valueCodeableConcept.coding.system = "http://FALP.cl/CodeSystem/CSurgProcedimiento"
+* extension[UrgenciaProcedimiento].valueCodeableConcept.coding.system = "https://FALP.cl/CodeSystem/CSurgProcedimiento"
 * extension[UrgenciaProcedimiento].valueCodeableConcept.coding = #MEDIA "MEDIA"
 
 * note.text = "Alergia a la anestesia"
@@ -169,7 +169,7 @@ Description: "An example Historia Clínica instance."
 * code.coding.code = #1648002
 * code.coding.display = "Lymphocytic pseudotumor of lung"
 
-* severity.coding.system = "http://FALP.cl/CodeSystem/CSseveridadDiagnostica"
+* severity.coding.system = "https://FALP.cl/CodeSystem/CSseveridadDiagnostica"
 * severity.coding.code = #MODERADO "MODERADO"
 
 * note.text = "Pulmón derecho"
