@@ -21,7 +21,7 @@ Description: "Ejemplo de un paciente con las necesidades de la FALP"
 * identifier.use = #secondary
 * identifier.type = #01
 * identifier.type.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"
-* identifier.type.coding.display = "Rol Único Nacional o RUN"
+* identifier.type.coding.display = "RUN"
 * identifier.value = "30.696.558-7"
 
 * active = true
@@ -66,7 +66,7 @@ Description: "Ejemplo de un paciente con las necesidades de la FALP"
 //* contact.extension.extension.valueIdentifier.type = #PPN 
 * contact.extension.extension.valueIdentifier.type.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"
 * contact.extension.extension.valueIdentifier.type.coding.code = #01
-* contact.extension.extension.valueIdentifier.type.coding.display = "Rol Único Nacional o RUN"
+* contact.extension.extension.valueIdentifier.type.coding.display = "RUN"
 * contact.extension.extension.valueIdentifier.system = "http://regcivil.cl/Validacion/RUN"
 * contact.extension.extension.valueIdentifier.value = "12.435.789-k"
 
@@ -113,15 +113,17 @@ Description: "An example Solicitud del Procedimiento instance."
 * id = "example-SolicitudProcedimiento"
 * status = #completed
 * subject = Reference(EjPaciente) 
+* intent = #proposal
 
 * extension[FechaSolicitud].valueDateTime = "2024-07-17"
 
-* extension[TipoProcedimiento].valueString = "BIOPSIA"
+* code.coding.system = "http://snomed.info/sct"
+* code.coding.code = #5738003 "Open biopsy of bronchus"
 
 * extension[UrgenciaProcedimiento].valueCodeableConcept.coding.system = "http://falp.cl/CodeSystem/CSurgProcedimiento"
 * extension[UrgenciaProcedimiento].valueCodeableConcept.coding = #MEDIA "MEDIA"
 
-* extension[Observacion].valueString = "Alergica a la anestesia"
+* note.text = "Alergia a la anestesia"
 
 
 //REPORTE DEL PROCEDIMIENTO //
@@ -149,8 +151,8 @@ Description: "An example Reporte del Procedimiento instance."
  
 // HISTORIA CLINICA //
 
-Instance: EjHistorialClinico
-InstanceOf: HistorialClinico
+Instance: EjDiagnosticoPrevio
+InstanceOf: DiagnosticoPrevio
 Usage: #Example 
 Title: "Example-HistoriaClínica"
 Description: "An example Historia Clínica instance."  
@@ -161,14 +163,16 @@ Description: "An example Historia Clínica instance."
 //* id = "example-HistoriaClinica"
 * subject = Reference(EjPaciente) 
 
-* extension[FechaDiagnostica].valueDateTime = "2024-08-02"
+* onsetDateTime = "2024-08-02"
 
-* extension[TerminoClinico].valueString = "CANCER AL RIÑON"
+* code.coding.system = "http://snomed.info/sct"
+* code.coding.code = #1648002
+* code.coding.display = "Lymphocytic pseudotumor of lung"
 
-* extension[SeveridadDiagnostico].valueCodeableConcept.coding.system = "http://falp.cl/CodeSystem/CSseveridadDiagnostica"
-* extension[SeveridadDiagnostico].valueCodeableConcept.coding = #MODERADO "MODERADO"
+* severity.coding.system = "http://falp.cl/CodeSystem/CSseveridadDiagnostica"
+* severity.coding.code = #MODERADO "MODERADO"
 
-* extension[Observacion].valueString = "RIÑON DERECHO"
+* note.text = "Pulmón derecho"
 
 
 // PRESTADOR INDIVIDUAL  //
@@ -190,7 +194,7 @@ Description: "An example Prestador individual instance."
 * identifier.value = "15.666.378-2"
 * identifier.type.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"
 * identifier.type.coding.code = #01
-* identifier.type.coding.display = "Rol Único Nacional o RUN"
+* identifier.type.coding.display = "RUN"
 
 * address.state.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl"
 * address.state.extension.valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL"
@@ -243,7 +247,7 @@ Description: "An example Organización instance."
 * address.district.extension.valueCodeableConcept.coding.code = #131 "Santiago"
 
 * address.state.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl"
-* address.state.extension.valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionesCL"
+* address.state.extension.valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL"
 * address.state.extension.valueCodeableConcept.coding.code = #13 "RegionMetropolitana"
 
 // LOCALIZACIÓN // 

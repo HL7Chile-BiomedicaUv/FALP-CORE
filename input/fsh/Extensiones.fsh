@@ -68,7 +68,7 @@ Extension: FechaSolicitud
 Id: Fecha-Solicitud
 Title: "Fecha de Solicitud"
 Description: "Fecha en que se realizó la solicitud del procedimiento."
-Context: Condition , Procedure
+Context: Condition , ServiceRequest
 * value[x] only dateTime 
 
 
@@ -93,7 +93,7 @@ Extension: UrgenciaProcedimiento
 Id: UrgenciaProcedimiento
 Title: "Urgencia del Procedimiento"
 Description: "Valoración subjetivade la urgencia del Procedimiento"
-Context: Procedure
+Context: ServiceRequest
 * value[x] only CodeableConcept
   * ^short =  "Urgencia del Procedimiento"
 * valueCodeableConcept from VSurgProcedimiento
@@ -188,11 +188,3 @@ Context: Organizacion
   * ^short = "Pertinencia SNSS"
 * valueCodeableConcept from https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/VSTipoPertinenciaEstab 
   * ^binding.description = "Atributo o característica del establecimiento relacionado con la relación de jurisdicción establecia con el Sistema Nacional de Servicio de Salud"
-
-//REFERENCIA// 
-Extension: Referencia 
-Id: Referencia
-Title: "Referencia"
-Description: "Referencia Paciente"
-Context: Condition , Procedure
-* value[x] only Reference(Paciente) 
