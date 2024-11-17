@@ -41,7 +41,7 @@ Extension: TramosFonasaExtension
 Id:  TramosFonasa
 Title: "Set de códigos de tramos de Fonasa"
 Description: "Set de códigos de tramos de Fonasa"
-Context: Coverage
+Context: Coverage 
 * value[x] only CodeableConcept
   * ^short = "Tramos de Fonasa"
 * valueCodeableConcept from https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/VSTramosFonasa
@@ -117,18 +117,6 @@ Context: CoreDiagnosticoCl
 * valueDateTime 
 */
 // HISTORIA CLINICA //
-
-Extension: SeveridadDiagnostico
-Id: SeveridadDiagnostico
-Title: "Severidad Diagnóstica"
-Description: "Valoración subjetiva de la gravedad de la enfermedad evaluada por el clínico"
-Context: CoreDiagnosticoCl
-* value[x] only CodeableConcept
-  * ^short = "Severidad Diagnóstica"
-* valueCodeableConcept from VSseveridadDiagnostica
-  * ^binding.description = "Valoración subjetiva de la gravedad de la enfermedad evaluada por el clínico"
-
-
 
 //PRESTADOR INDIVIDUAL///
 
