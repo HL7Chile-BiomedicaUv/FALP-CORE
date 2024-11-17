@@ -8,6 +8,10 @@ Title: "Tramos de la urgencia del Procedimiento"
 Description: "Código asociados a la urgencia del Procedimiento"
 * ^caseSensitive = true
 * ^experimental = false 
+* ^jurisdiction =  urn:iso:std:iso:3166#CL "Chile"
+* ^version = "0.1.0"
+* ^status = #active
+
 * #BAJA "BAJA"
 * #MEDIA "MEDIA" 
 * #ALTA "ALTA"
@@ -20,6 +24,9 @@ Title: "Tramos de Severidad Diagnóstica"
 Description: "Tramos de Severidad Diagnóstica dependiendo de la valoración subjetiva de la gravedad de la enfermedad evaluada por el clínico"
 * ^caseSensitive = true 
 * ^experimental = false   
+* ^jurisdiction =  urn:iso:std:iso:3166#CL "Chile"
+* ^version = "0.1.0"
+* ^status = #active
 * #LEVE "LEVE"
 * #MODERADO "MODERADO"
 * #GRAVE "GRAVE"

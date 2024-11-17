@@ -108,23 +108,15 @@ Context: Condition , Procedure
 
 
 //DIAGNÓSTICO//
-
+/*
 Extension: FechaDiagnostica
 Id: FechaDiagnostica
 Title: "Fecha de Diagnóstico"
 Description: "Fecha en que se realizó el diagnóstico."
 Context: CoreDiagnosticoCl
 * valueDateTime 
-
+*/
 // HISTORIA CLINICA //
-
-Extension: TerminoClinico
-Id: TerminoClinico
-Title: "Termino Clinico"
-Description: "Término Clínico ingresado por el médico"
-Context: CoreDiagnosticoCl 
-* value[x] only string 
-* valueString 
 
 Extension: SeveridadDiagnostico
 Id: SeveridadDiagnostico
