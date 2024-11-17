@@ -19,6 +19,6 @@ Description: "Diagnósticos previos que presenta el paciente"
   *  ^short = "Codigo usado para el diagnóstico previo"
 * code from https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSDiagnosticosSCT
 * severity 0..1 MS
-* severity from http://falp.cl/ValueSet/VSseveridadDiagnostica
+* severity from http://FALP.cl/ValueSet/VSseveridadDiagnostica
 * note 0..1 MS
   * ^short = "Espacio para anotar cualquier información que se considere relevante"
