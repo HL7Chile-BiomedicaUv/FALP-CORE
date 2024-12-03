@@ -31,4 +31,3 @@ Description: "Perfil de Paciente"
 * contact.address
   * state 0..1 MS
 
-
