@@ -3,7 +3,7 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.fhir.cl.falpcore
+id: hl7.fhir.uv.falpcore
 canonical: https://FALP.cl
 name: FALP_CORE
 # title: Example Title
