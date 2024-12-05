@@ -5,6 +5,7 @@ Title: "Organzación en Salud"
 Description: "Perfil de la Organización de Salud"
 
 * extension contains TipoSistemaSalud named TipoSistemaSalud 1..1
+  * ^experimental = true
 * identifier 1..*
 * extension contains TipoEstablecimientosPublicos named TipoEstablecimientosPublicos 1..1 
 * extension contains NivelAtencion named NivelAtencion 1..1 
