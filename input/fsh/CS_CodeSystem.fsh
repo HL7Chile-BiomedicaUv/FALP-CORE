@@ -24,7 +24,8 @@ Title: "Tramos de Severidad Diagnóstica"
 Description: "Tramos de Severidad Diagnóstica dependiendo de la valoración subjetiva de la gravedad de la enfermedad evaluada por el clínico"
 * ^caseSensitive = true 
 * ^experimental = false   
-* ^jurisdiction =  urn:iso:std:iso:3166#CL "Chile"
+//* ^jurisdiction =  urn:iso:std:iso:3166#CL "Chile"
+* ^jurisdiction = urn:iso:std:iso:#001 "World"
 * ^version = "0.1.0"
 * ^status = #active
 * #LEVE "LEVE"
@@ -45,7 +46,8 @@ Description: "Nombres del tipo de diabetes y opción de si no posee"
 * ^contact.name = "HL7 Chile"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+//* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* ^jurisdiction = urn:iso:std:iso:#001 "World"
 * ^caseSensitive = true
 
 * #tipo1 "Diabetes Tipo 1"
