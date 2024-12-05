@@ -25,7 +25,7 @@ Description: "Tramos de Severidad Diagnóstica dependiendo de la valoración sub
 * ^caseSensitive = true 
 * ^experimental = false   
 //* ^jurisdiction =  urn:iso:std:iso:3166#CL "Chile"
-* ^jurisdiction = urn:iso:std:iso:#001 "World"
+* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 * ^version = "0.1.0"
 * ^status = #active
 * #LEVE "LEVE"
