@@ -3,6 +3,7 @@ Id: SexoBiologico
 Title: "Sexo biólogico"
 Description: "Sexo asignado al nacer "
 Context: Patient 
+* ^experimental = true
 * value[x] only CodeableConcept
   * ^short = "Sexo biólogico"
 * valueCodeableConcept from https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/VSSexoBiologico 
@@ -32,6 +33,7 @@ Id:  Prevision
 Title: "Set de códigos de previones de Salud"
 Description: "Set de códigos de previsiones de Salud"
 Context: Coverage 
+* ^experimental = true
 * value[x] only CodeableConcept
   * ^short = "Previones de Salud"
 * valueCodeableConcept from https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/VSPrevision
@@ -42,6 +44,7 @@ Id:  TramosFonasa
 Title: "Set de códigos de tramos de Fonasa"
 Description: "Set de códigos de tramos de Fonasa"
 Context: Coverage 
+* ^experimental = true
 * value[x] only CodeableConcept
   * ^short = "Tramos de Fonasa"
 * valueCodeableConcept from https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/VSTramosFonasa
@@ -94,6 +97,7 @@ Id: UrgenciaProcedimiento
 Title: "Urgencia del Procedimiento"
 Description: "Valoración subjetivade la urgencia del Procedimiento"
 Context: ServiceRequest
+* ^experimental = true
 * value[x] only CodeableConcept
   * ^short =  "Urgencia del Procedimiento"
 * valueCodeableConcept from VSurgProcedimiento
@@ -134,6 +138,7 @@ Id: TipoSistemaSalud
 Title: "Tipos de Sistemas de Salud"
 Description: "Tipos de Sistemas de Salud"
 Context: Organization 
+* ^experimental = true
 * value[x] only CodeableConcept
   * ^short = "Tipos de Sistemas de Salud"
 * valueCodeableConcept from https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/VSTipoSistemaSalud
@@ -144,6 +149,7 @@ Id: TipoEstablecimientosPublicos
 Title: "Tipos de Establecimientos Publicos"
 Description: "Tipos de Establecimientos Publicos"
 Context: Organizacion
+* ^experimental = true
 * value[x] only CodeableConcept
   * ^short = "Tipos de Establecimientos Publicos"
 * valueCodeableConcept from https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/VSTipoEstablecimientosPublicos 
@@ -154,6 +160,7 @@ Id: NivelAtencion
 Title: "Nivel de Atención"
 Description: "Nivel de atención que se asigna según la cobertura y complejidad"
 Context: Organizacion
+* ^experimental = true
 * value[x] only CodeableConcept
   * ^short = "Nivel de Atencion"
 * valueCodeableConcept from https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/VSNivelAtencion
@@ -163,7 +170,8 @@ Extension: TipoPertinenciaEstab
 Id: TipoPertinenciaEstab	
 Title: "Pertinencia SNSS"
 Description: "Atributo o característica del establecimiento relacionado con la relación de jurisdicción establecia con el Sistema Nacional de Servicio de Salud"
-Context: Organizacion 
+Context: Organizacion
+* ^experimental = true
 * value[x] only CodeableConcept
   * ^short = "Pertinencia SNSS"
 * valueCodeableConcept from https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/VSTipoPertinenciaEstab 

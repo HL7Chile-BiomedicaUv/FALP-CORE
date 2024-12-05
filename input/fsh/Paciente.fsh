@@ -8,7 +8,6 @@ Title: "Paciente"
 Description: "Perfil de Paciente"
 
 * extension contains SexoBiologico named Sexobiologico 0..1 
-  * ^experimental = true
 * extension[SexoBiologico].valueCodeableConcept 0..1
 * extension contains Nacionalidad named Nacionalidad 1..*
 * birthDate 1..1

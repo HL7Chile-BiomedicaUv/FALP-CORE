@@ -17,7 +17,7 @@ Title: "Severidad Diagnostica"
 Description: "Valoración subjetiva de la gravedad de la enfermedad evaluada por el clínico"
 * ^version = "0.1.0"
 * ^status = #active
-* ^experimental = true
+//* ^experimental = true
 * ^jurisdiction =  urn:iso:std:iso:3166#CL "Chile"
 
 * include codes from system CSseveridadDiagnostica

@@ -10,7 +10,6 @@ Description: "Perfil de Solicitud del Procedimiento"
 * extension[FechaSolicitud].valueDateTime ^definition = "Fecha en que solicitud el procedimiento"
 
 * extension contains UrgenciaProcedimiento named UrgenciaProcedimiento 0..1
-  * ^experimental = true
 
 
 
