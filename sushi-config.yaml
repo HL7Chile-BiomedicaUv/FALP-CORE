@@ -6,7 +6,7 @@
 id: hl7.fhir.uv.falpcore
 canonical: https://FALP.cl
 name: FALP_CORE
-# title: Example Title
+title: GI CORE FALP
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft # draft | active | retired | unknown
 version: 0.1.0
@@ -14,7 +14,7 @@ fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
 releaseLabel: ci-build
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
-jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
+jurisdiction: urn:iso:std:iso:3166#CL "Chile"
 publisher:
   name: Esteban Fredes
   url: https://biomedica.uv.cl
