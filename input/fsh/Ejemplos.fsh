@@ -264,3 +264,21 @@ Description: "An example Localizacion instance."
 * position.longitude = -0.1278 
 * managingOrganization = Reference(EjOrganizacion)
 
+
+//  SERVICIO SOLICITANTE   //
+
+Instance : EjServicioSolicitante
+Title : "Ejemplo de Servicio Solicitante"
+Description: "Ejemplo de datos del Servico Solicitante."
+InstanceOf : ServicioSolicitante
+Usage : #example
+
+* id = "identificador"
+* identifier.value = "servicio3"
+
+* specialty.coding.system = "http://snomed.info/sct"
+* specialty.coding.code = #394582007 "Dermatology"
+
+* name = "Servicio de dermatología"
+
+* providedBy = Reference(EjOrganizacion)
