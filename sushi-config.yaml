@@ -43,14 +43,15 @@ dependencies:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
-# pages:
-#   index.md:
-#     title: Example Home
-#   implementation.xml:
-#   examples.xml:
-#     title: Examples Overview
-#     simpleExamples.xml:
-#     complexExamples.xml:
+pages:
+  index.md:
+    title: Inicio
+  objetivos.md: 
+    title: Objetivos
+  artifacts.md:
+    title: Artefactos
+  cambios.md:
+    title: Historial de cambios
 #
 #
 # The parameters property represents IG.definition.parameter. Rather
@@ -75,8 +76,10 @@ dependencies:
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
-  Home: index.html
+  Inicio: index.html
+  Objetivos: objetivos.html
   Artifacts: artifacts.html
+  Historial de Cambios: cambios.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

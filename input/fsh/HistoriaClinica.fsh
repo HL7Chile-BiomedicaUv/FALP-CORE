@@ -3,15 +3,7 @@ Parent: CoreDiagnosticoCl
 Id: DiagnosticoPrevio     
 Title: "Diagnósticos previos"
 Description: "Diagnósticos previos que presenta el paciente"
-/*
-* extension contains FechaDiagnostica named FechaDiagnostica 1..1 
-* extension[FechaDiagnostica].valueDateTime 1..1
-* extension[FechaDiagnostica].valueDateTime MS
-* extension[FechaDiagnostica].valueDateTime ^short = "Fecha en que se realizó el diagnóstico"
-* extension contains TerminoClinico named TerminoClinico 1..*
-* extension contains SeveridadDiagnostico named SeveridadDiagnostico 0..1   
-* extension contains Observacion named Observacion 0..1
-*/
+
 
 * onsetDateTime 1..1 MS
   * ^short = "Fecha en la que se realizó el diagnóstico"

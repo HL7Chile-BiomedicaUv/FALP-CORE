@@ -1,4 +1,4 @@
-### Introcucción 
+### Introducción 
 
 Esta guía, en conjunto con todas las guías de implementación de la Fundación Arturo López Pérez, están basadas en el estándar [HL7 FHIR R4].
 Ellas buscan modelar de manera interoperable el viaje del paciente, con el fin de realizar un seguimiento oportuno de los pacientes.
@@ -15,7 +15,7 @@ En la parte superior puede ver la barra de menú, donde aparecen las diferentes 
     * [Perfiles](artifacts.html#structures-resource-profiles): Perfiles IPS generados para la guía. 
     * [ValueSets](artifacts.html#terminology-value-sets): ValueSet creados para funcionamientos de la guía.
     * [CodeSystems](artifacts.html#terminology-code-systems): Codesystem creados para funcionamientos de la guía.
-* [Ejemplos](artifacts.html#example-example-instances): Instancias creadas como ejemplo de los doferentes perfiles de la guía.
+    * [Ejemplos](artifacts.html#example-example-instances): Instancias creadas como ejemplo de los doferentes perfiles de la guía.
 * [Historial de cambios](cambios.html): Historial de cambios o versiones que has sido realizados en la guía a lo largo del tiempo.
 
 
@@ -34,6 +34,7 @@ Los perfiles que fueron diseñados en esta guía son:
   * [Prestador Individual](StructureDefinition-PrestadorIndividual.html)
   * [Reporte de procedimiento](StructureDefinition-ReporteProcedimiento.html)
   * [Respuesta de cuestionario](StructureDefinition-RespCuestionario.html)
+  * [Servicio solicitante](StructureDefinition-ServicioSolicitante.html)
   * [Solicitud de procedimiento](StructureDefinition-SolicitudProcedimiento.html)
 
 ### Dependencias

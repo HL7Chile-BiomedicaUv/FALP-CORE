@@ -1,5 +1,6 @@
 Profile : ServicioSolicitante
 Parent : HealthcareService
+Id: ServicioSolicitante
 Description: "Este es un perfil donde se encontrarán los datos del servicio de salud que realiza la petición de muestra"
 
 * identifier    1..1 
