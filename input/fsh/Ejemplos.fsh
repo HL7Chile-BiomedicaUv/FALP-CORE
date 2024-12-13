@@ -53,17 +53,14 @@ Description: "Ejemplo de un paciente con las necesidades de la FALP"
 * contact.address.state.extension.valueCodeableConcept.coding.code = #13 "RegionMetropolitana"
 
 
-//* contact.name.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdContacto" //falta agregar identificaor del acompañante revisar bien todo lo que tenga que ver con el contacto 
 * contact.name.use =  #official
 * contact.name.family = "Gonzalez"
 * contact.name.given[0] = "Maria"
  
 * contact.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdContacto"
 
-// esto sería el slice de tutID obligatorio 
 * contact.extension.extension.url = "tutId"
 * contact.extension.extension.valueIdentifier.use = #official "Official"
-//* contact.extension.extension.valueIdentifier.type = #PPN 
 * contact.extension.extension.valueIdentifier.type.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"
 * contact.extension.extension.valueIdentifier.type.coding.code = #01
 * contact.extension.extension.valueIdentifier.type.coding.display = "RUN"
@@ -185,10 +182,6 @@ Description: "An example Prestador individual instance."
 * name.given = "Pedro"
 * birthDate = "1980-12-25" 
 
-
-//* identifier.use = #official
-//* identifier.type = #MD "Medical License number"
-//* identifier.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentificadores"
 * identifier.value = "15.666.378-2"
 * identifier.type.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"
 * identifier.type.coding.code = #01

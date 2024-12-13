@@ -19,13 +19,6 @@ Context: Patient
 * valueCodeableConcept from https://hl7chile.cl/fhir/ig/clcore/ValueSet/CodPais
   * ^binding.description = "Tabla de Nacionalidad"
 
-Extension: MyTelecomExtension
-Id: MyTelecomExtension
-Title: "Contacto del acompañante"
-Description: "Contacto del acompañante del paciente"
-Context: Patient.contact.telecom
-* value[x] only string
-
 //COVERAGE//
 
 Extension: PrevisionExtension
