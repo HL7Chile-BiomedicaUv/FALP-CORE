@@ -10,4 +10,3 @@ Esta guía fue realizada por la Fundación Arturo López Pérez y la Universidad
 Como trabajo futuro para esta guía se plantea:
 
 * Establecer terminologías faltantes: Aún restan terminologías que no están amoldadas o especificadas para los requerimientos de la fundación.
-

@@ -41,6 +41,10 @@ Los perfiles que fueron diseñados en esta guía son:
 
 {% include dependency-table.xhtml %}
 
+### Autores 
+
+  * Antonia Cuevas 
+  * Esteban Fredes 
 
 ### Análisis de versiones cruzadas
 
