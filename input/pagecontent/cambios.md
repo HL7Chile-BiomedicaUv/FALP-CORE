@@ -4,13 +4,33 @@
 
 Se realizaron diferentes cambios respecto a la versión 0.0.1, sobre todo en la utilziación de perfiles y terminologías, se eliminó el uso de extensiones que abarcaban elementos ya existentes en los recursos, se agregó otrs perfiles faltantes, se realizó un validación de los perfiles con la herramienta QA report y se agregó contenido a la guía. 
 
+## Template
+
+Se agregó una carpeta template, proveniente de HL7 Chile, para colocar los logos de HL7 Chile y la FALP, en la parte superior de la guía
+
+  * Cambio id de guía: fhir.falp --> hl7.fhir.cl.falpcore
+  * Cambio nombre guía: falp --> FALP_CORE
+  * Cambio canonical: http://falp.cl --> https://FALP.cl
+  * cambio jurisdiction: --> urn:iso:std:iso:3166#CL "Chile"
+  * Cambio dependencia versión CORE CL: 1.8.10 --> 1.9.1
+
+## Páginas
+
+Se agregaron diferentes pestañas en la barra superior de la guía, además de agregar contenido explicativo en estas.
+
+  * [Inicio](index.html)
+  * [Objetivos](objetivos.html)
+  * [Historial de cambios](cambios.html)
+
+
+
 ## Perfiles
 
 # Historial clínico
 
 Se modificó el nombre de este perfil y se modificaron sus elementos internos, además de modificar su terminología.
 
-  * Historial clínico --> Diagnóstico Previo
+  * Nombre perfil: Historial clínico --> Diagnóstico Previo
   * Extension [FechaDiagnostica] --> Elemento [onsetDataTime]
   * Extension [TerminoClinico] --> Elemento [code]
     * code from https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSDiagnosticosSCT
@@ -35,7 +55,33 @@ Dentro del perfil paciente hubo cambios menores:
 
 # PrestacionSalud
 
-  * Se eliminó la extensión [Referencia]
+  * Extension [Referencia] eliminada (Referencia al paciente con elemento subject)
 
-# 
+# ServicioSolicitante
+
+Se agregó el perfil, proveniente de la guía de biopsia, con el fin de permitir mayor compatibilidad
+
+# SolicitudProcedimiento
+
+Cambio de recurso referencia en en el perfil. Procedure --> ServiceRequest
+
+  * Extension [TipoProcedimiento] --> elemento [code]
+    * code from http://hl7.org/fhir/ValueSet/procedure-code
+  * Extension [Observacion] --> elemento [note]
+  * Extension [Referencia] eliminada (Referencia al paciente con elemento subject)
+
+## Extensiones
+
+Se realizaron diferentes cambios en las extensiones
+
+  * Se eliminaron las extensiones: Genero, fechaDiagnóstico, TeminoClinico, SeveridadDiagnostico, Referencia
+
+## Terminologías 
+
+# CodeSystem y ValueSet
+
+Se agregaron elementos a la meta a todos los CodeSystems y ValueSets 
+
+  * elementos: jurisdiction, version y status
+
 

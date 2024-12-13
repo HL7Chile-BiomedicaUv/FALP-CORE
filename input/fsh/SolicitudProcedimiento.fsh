@@ -11,8 +11,6 @@ Description: "Perfil de Solicitud del Procedimiento"
 
 * extension contains UrgenciaProcedimiento named UrgenciaProcedimiento 0..1
 
-
-
 * code 1.. MS 
   * ^short = "Tipo de procedimiento que se solicita realizar"
 * code from http://hl7.org/fhir/ValueSet/procedure-code

@@ -77,8 +77,6 @@ Description: "Ejemplo de un paciente con las necesidades de la FALP"
 * contact.telecom[0].value = "maria.gonzalez@example.com"
 * contact.telecom[0].use = #home
 
-// * contact.telecom[0].extension[MyTelecomExtension].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/MyTelecomExtension"
-* contact.telecom[0].extension[MyTelecomExtension].valueString = "ejemplo@correoaompañante.cl"
 
 Instance: EjPrestacionSalud
 InstanceOf: PrestacionSalud
