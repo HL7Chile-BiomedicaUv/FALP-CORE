@@ -146,17 +146,22 @@ Description: "An example Reporte del Procedimiento instance."
  
 // HISTORIA CLINICA //
 
-Instance: EjDiagnosticoPrevio
-InstanceOf: DiagnosticoPrevio
+Instance: EjCondicionClinica
+InstanceOf: CondicionClinica
 Usage: #Example 
 Title: "Example-HistoriaClínica"
 Description: "An example Historia Clínica instance."  
 
+* subject = Reference(EjPaciente)
+
 * clinicalStatus.coding.system = "http://terminology.hl7.org/CodeSystem/condition-clinical"
 * clinicalStatus.coding.code = #active
 
-//* id = "example-HistoriaClinica"
-* subject = Reference(EjPaciente) 
+* verificationStatus.coding.system = "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+* verificationStatus.coding.code = #confirmed
+
+* category.coding.system = "http://terminology.hl7.org/CodeSystem/condition-category"
+* category.coding.code = #problem-list-item 
 
 * onsetDateTime = "2024-08-02"
 
